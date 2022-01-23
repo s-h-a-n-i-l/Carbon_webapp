@@ -1,0 +1,8 @@
+.transition-swipe{
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.is-animating .transition-swipe{
+    opacity: 0;
+}

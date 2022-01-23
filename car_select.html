@@ -1,0 +1,770 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="carbon_icon.ico"
+    />
+    
+    <meta name="viewport" content="width=device-width, scale=1.0"/>
+    <meta name="theme-color" content="#00d99c" />
+    <meta name="description" content="BMI tracker with graphs" />
+    <link rel="manifest" href="https://obese-pwa.netlify.app/manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      href="https://obese-pwa.netlify.app/public/images/icons/apple-touch-icon.png"
+    />
+    <title>carbon</title>
+    <link href="./carbon_files/3.f270ca23.chunk.css" rel="stylesheet" />
+    <link href="./carbon_files/main.6b25f9d7.chunk.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mai.scss">
+    <script defer src="./dist/swup.min.js"></script>
+    <script defer src="swup_script.js"></script>
+    <link rel="stylesheet" href="./styletr.css">
+    <script>
+      function timeFunction() {
+        var x = document.getElementById("man").style.display = "none";
+     }
+    </script>
+    <style type="text/css">
+      .grid-container {
+        display: grid;
+
+        grid-gap: 0px;
+
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-rows: 200px;
+
+        grid-auto-flow: dense;
+      }
+
+      .grid-item {
+        border: 0px solid rgba(0, 0, 0, 0.8);
+        padding: 0px;
+        font-size: 30px;
+        text-align: center;
+        max-width: 100%;
+      }
+    </style>
+    <style type="text/css">
+      .fc-ab-root {
+        display: none !important;
+      }
+      body > div.fc-ab-root {
+        display: none !important;
+      }
+      .fbs-auth__container.fbs-auth__adblock {
+        display: none !important;
+      }
+      .overlay-34_Kj {
+        display: none !important;
+      }
+      .wrapper-3AzfF {
+        display: none !important;
+      }
+      .fEy1Z2XT {
+        display: none !important;
+      }
+      .nytc---modal-window---windowContainer.nytc---modal-window---isShown.nytc---shared---blackBG {
+        display: none !important;
+      }
+      .tp-modal {
+        display: none !important;
+      }
+      .tp-backdrop.tp-active {
+        display: none !important;
+      }
+      .c-nudge__container.c-gate__container {
+        display: none !important;
+      }
+      .c-nudge__container.c-regGate__container {
+        display: none !important;
+      }
+      .css-n7r8pg {
+        display: none !important;
+      }
+      .css-1bd8bfl {
+        display: none !important;
+      }
+      .overlay__59af11e2 {
+        display: none !important;
+      }
+      .tp_modal {
+        display: none !important;
+      }
+      .tp-backdrop.tp-active {
+        display: none !important;
+      }
+      div[class^="sp_message_container"] {
+        display: none !important;
+      }
+      div[class^="sp_veil"] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body  style="width: 100%;"  
+  onload="                    
+  var uptra = document.getElementById('sidtran');
+  uptra.style.display = 'none';
+  var sidtra = document.getElementById('uptran')
+  sidtra.style.display = 'none';"
+  >
+    <div class="container">
+      <div id='uptran'style="display:none;">
+        <div class="top-layer"></div>
+        <div class="top-layer top-layer--2"></div>
+        <div class="top-layer top-layer--3"></div>
+        <div class="top-layer top-layer--4"></div>
+        <div class="top-layer top-layer--5"></div>
+        <div class="bottom-layer"></div>
+        <div class="bottom-layer bottom-layer--2"></div>
+        <div class="bottom-layer bottom-layer--3"></div>
+      </div>
+
+      <div id='sidtran'style="display:none;">
+        <div class="left-layer"></div>
+        <div class="left-layer left-layer--2"></div>
+        <div class="left-layer left-layer--3"></div>
+        <div class="left-layer left-layer--4"></div>
+        <div class="right-layer"></div>
+        <div class="right-layer right-layer--2"></div>
+        <div class="right-layer right-layer--3"></div>
+        <div class="buttons">
+      </div>
+    </div>
+    <main id= "man" class="transition-swipe">
+    <div class="grid-container">
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Taxi');
+        sessionStorage.setItem('CO2perkg','0.17699');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Taxi">Taxi</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Classic-Bus');
+        sessionStorage.setItem('CO2perkg','0.14986');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Classic-Bus">Classic-Bus</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+            <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Eco-Bus');
+        sessionStorage.setItem('CO2perkg','0.10005');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Eco-Bus">Eco-Bus</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Coach');
+        sessionStorage.setItem('CO2perkg','0.03471');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Coach">Coach</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','National Train');
+        sessionStorage.setItem('CO2perkg','0.06715');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "National Train">National Train</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+            <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Light Rail');
+        sessionStorage.setItem('CO2perkg','0.07659');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Light Rail">Light Rail</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Subway');
+        sessionStorage.setItem('CO2perkg','0.0229');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Subway">Subway</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Ferry On Foot');
+        sessionStorage.setItem('CO2perkg','0.0229');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Ferry On Foot">Ferry On Foot</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+            <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Ferry In Car');
+        sessionStorage.setItem('CO2perkg','0.15823');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Ferry In Car">Ferry In Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Small Diesel Car');
+        sessionStorage.setItem('CO2perkg','0.17137');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Small Diesel Car">Small Diesel Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Medium Diesel Car');
+        sessionStorage.setItem('CO2perkg','0.21291');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Medium Diesel Car">Medium Diesel Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+            <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Large Diesel Car');
+        sessionStorage.setItem('CO2perkg','0.28267');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Large Diesel Car">Large Diesel Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','MediumHybrid Car');
+        sessionStorage.setItem('CO2perkg','0.13984');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "MediumHybrid Car">Medium Hybrid Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Large Hybrid Car');
+        sessionStorage.setItem('CO2perkg','0.2481');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Large Hybrid Car">Large Hybrid Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+            <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Medium LPG Car');
+        sessionStorage.setItem('CO2perkg','0.21373');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Medium LPG Car">Medium LPG Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','LargeLPG Car');
+        sessionStorage.setItem('CO2perkg','0.30626');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "LargeLPG Car">LargeLPG Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Medium CNG Car');
+        sessionStorage.setItem('CO2perkg','0.19636');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Medium CNG Car">Medium CNG Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+            <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Large CNG Car');
+        sessionStorage.setItem('CO2perkg','0.28116');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Large CNG Car">Large CNG Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Small Petrol Van');
+        sessionStorage.setItem('CO2perkg','0.23963');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Small Petrol Van">Small Petrol Van</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Large Petrol Van');
+        sessionStorage.setItem('CO2perkg','0.31079');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Large Petrol Van">Large Petrol Van</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+            <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Small Dielsel Van');
+        sessionStorage.setItem('CO2perkg','0.18579');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Small Dielsel Van">Small Dielsel Van</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Medium Dielsel Van');
+        sessionStorage.setItem('CO2perkg','0.27402');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Medium Dielsel Van">Medium Dielsel Van</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Large Dielsel Van');
+        sessionStorage.setItem('CO2perkg','0.32302');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Large Dielsel Van">Large Dielsel Van</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+            <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','LPG Van');
+        sessionStorage.setItem('CO2perkg','0.29599');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "LPG Van">LPG Van</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','CNG Van');
+        sessionStorage.setItem('CO2perkg','0.27602');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "CNG Van">CNG Van</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Small Petrol Car');
+        sessionStorage.setItem('CO2perkg','0.1983');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Small Petrol Car">Small Petrol Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+            <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Medium Petrol Car');
+        sessionStorage.setItem('CO2perkg','0.24927');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Medium Petrol Car">Medium Petrol Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      <div class="grid-item">
+        <button
+        class="fancy"
+        onclick=
+        "
+        disp_up_tran();
+        timeFunction();
+        var delayInMilliseconds = 1000;
+        sessionStorage.setItem('car','Large Petrol Car');
+        sessionStorage.setItem('CO2perkg','0.35773');
+        setTimeout(function() {
+          window.location.href='/carbon.html';
+        }, delayInMilliseconds);
+        "
+        id="bottom"
+        class="buttons">
+          <span class="top-key"></span>
+          <a target="_blank" class="whitext" value= "Large Petrol Car">Large Petrol Car</a>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+      </div>
+      
+        
+
+      
+
+
+
+
+      
+      
+      
+    </div>
+    <div><script  src="./script.js"></script></div>
+  </main>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="carbon_icon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, scale=1.0" />
+  <meta name="theme-color" content="#00d99c" />
+  <meta name="description" content="BMI tracker with graphs" />
+  <link rel="manifest" href="https://obese-pwa.netlify.app/manifest.json" />
+  <link rel="apple-touch-icon" href="https://obese-pwa.netlify.app/public/images/icons/apple-touch-icon.png" />
+  <title>carbon</title>
+  <link href="./carbon_files/3.f270ca23.chunk.css" rel="stylesheet" />
+  <link href="./carbon_files/main.6b25f9d7.chunk.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mai.scss">
+  <script defer src="./dist/swup.min.js"></script>
+  <script defer src="swup_script.js"></script>
+  <link rel="stylesheet" href="./styletr.css">
+  <script>
+    function timeFunction() {
+      var x = document.getElementById("man").style.display = "none";
+    }
+  </script>
+  <style type="text/css">
+    .fc-ab-root {
+      display: none !important;
+    }
+
+    body>div.fc-ab-root {
+      display: none !important;
+    }
+
+    .fbs-auth__container.fbs-auth__adblock {
+      display: none !important;
+    }
+
+    .overlay-34_Kj {
+      display: none !important;
+    }
+
+    .wrapper-3AzfF {
+      display: none !important;
+    }
+
+    .fEy1Z2XT {
+      display: none !important;
+    }
+
+    .nytc---modal-window---windowContainer.nytc---modal-window---isShown.nytc---shared---blackBG {
+      display: none !important;
+    }
+
+    .tp-modal {
+      display: none !important;
+    }
+
+    .tp-backdrop.tp-active {
+      display: none !important;
+    }
+
+    .c-nudge__container.c-gate__container {
+      display: none !important;
+    }
+
+    .c-nudge__container.c-regGate__container {
+      display: none !important;
+    }
+
+    .css-n7r8pg {
+      display: none !important;
+    }
+
+    .css-1bd8bfl {
+      display: none !important;
+    }
+
+    .overlay__59af11e2 {
+      display: none !important;
+    }
+
+    .tp_modal {
+      display: none !important;
+    }
+
+    .tp-backdrop.tp-active {
+      display: none !important;
+    }
+
+    div[class^="sp_message_container"] {
+      display: none !important;
+    }
+
+    div[class^="sp_veil"] {
+      display: none !important;
+    }
+  </style>
+  <script type="text/JavaScript">
+    </script>
+</head>
+
+<body id="bod" onload="
+                        if (sessionStorage.getItem('dist_mult')== null){
+                          var unit= 1 ;
+                          sessionStorage.setItem('dist_mult',unit);
+                        }
+                        if (sessionStorage.getItem('unit')== null){
+                          var unit='Km';
+                          sessionStorage.setItem('unit',unit);
+                        }
+                        if (localStorage.getItem('log')== null){
+                          var logs=new Array();
+                          localStorage.setItem('log',logs);
+                        }
+                        dis=sessionStorage.getItem('distance');
+                        if (dis != null){
+                          dist_disp(dis);
+                        }
+                        crimg = document.getElementById('crimg');
+                        if (crimg.width<= 30){
+                          crimg.style.visibility = 'hidden'
+                        }
+                        dtimg = document.getElementById('dtimg');
+                        if (dtimg.width<= 30){
+                          dtimg.style.visibility = 'hidden'
+                        }
+                        var uptra = document.getElementById('uptran');
+                        uptra.style.display = 'none';
+                        var sidtra = document.getElementById('sidtran')
+                        sidtra.style.display = 'none';
+                        var x = document.getElementById('weight');
+                        if (dis != null){
+                        x.value = dis;
+                        }
+                        cval=sessionStorage.getItem('car');
+                        if (cval != null){
+                          car_disp(cval)
+                        }
+                        unt=sessionStorage.getItem('unit');
+                        if (unt != null){
+                          var x = document.getElementById('dist_unit');
+                          x.innerHTML = unt;
+                        }
+                        if (cval == 'null'){
+                          var und = 'unselected'
+                          var x = document.getElementById('out_car');
+                          x.innerHTML = und;
+
+                        }
+
+                        
+                        if (sessionStorage.getItem('distance')==null){
+                          dist_disp('0')
+
+                        }
+                        "
+                        style="margin: auto;">
+  <div class="container">
+    <div id='uptran' style="display:none;">
+      <div class="top-layer"></div>
+      <div class="top-layer top-layer--2"></div>
+      <div class="top-layer top-layer--3"></div>
+      <div class="top-layer top-layer--4"></div>
+      <div class="top-layer top-layer--5"></div>
+      <div class="bottom-layer"></div>
+      <div class="bottom-layer bottom-layer--2"></div>
+      <div class="bottom-layer bottom-layer--3"></div>
+    </div>
+
+    <div id='sidtran' style="display:none;">
+      <div class="left-layer"></div>
+      <div class="left-layer left-layer--2"></div>
+      <div class="left-layer left-layer--3"></div>
+      <div class="left-layer left-layer--4"></div>
+      <div class="right-layer"></div>
+      <div class="right-layer right-layer--2"></div>
+      <div class="right-layer right-layer--3"></div>
+      <div class="buttons">
+      </div>
+    </div>
+    <div style="width: 100%;" >
+      <main id="man" class="transition-swipe" style="width: 100vw;">
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root" style="width: 100vw;" >
+          <div class="header-container" style="width: 100vw;">
+            <span>journey co2 calculator</span>
+            <div class="right-aligned">
+              <button aria-label="history" align="right" class="Button_iconButton__3j4co false undefined" onclick="
+            disp_up_tran();
+            timeFunction();
+            var delayInMilliseconds = 800;
+            setTimeout(function() {
+              window.location.href='/log.html';
+            }, delayInMilliseconds);" id="bottom" class="buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="box-sizing: content-box">
+                  <line x1="8" y1="6" x2="21" y2="6"></line>
+                  <line x1="8" y1="12" x2="21" y2="12"></line>
+                  <line x1="8" y1="18" x2="21" y2="18"></line>
+                  <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                  <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                  <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="BottomSheet_sheet__qE9_j">
+            <div class="BottomSheet_items__36cDZ">
+
+            </div>
+          </div>
+        </div>
+        <div style="opacity: 1; transform: none">
+          <div class="Container_grid__24upy">
+            <div class="Card_counterCard__1P3_7" style="grid-area: height / height / height / height">
+              <div class="Card_cardHeader__A_QnC">
+                <div>
+                  <div class="Card_cardTitle__3o33r">
+                    <label for="height">transport:</label>
+                  </div>
+                  <div class="Card_cardSubtitle__2lk9G">
+                    <span id="out_car">unselected</span>
+                  </div>
+                </div>
+                <div>
+                  <img src="vehicle png.png" id="crimg" alt="distance picture"
+                    style="min-width:140px; width:140px; display: flex; max-width: 100%;" align="right">
+                </div>
+              </div>
+              <button class="Button_textButton__wPvLR"
+                style="grid-area: calculate / calculate / calculate / calculate; " onclick="
+              disp_up_tran();
+              timeFunction();
+              var delayInMilliseconds = 800;
+              setTimeout(function() {
+                window.location.href='/car_select.html';
+              }, delayInMilliseconds);" id="bottom" class="buttons">
+                select vehicle
+
+              </button>
+              <script>
+                function linkfunk() {
+                  window.location.href = '/car_select.html';
+                }
+
+              </script>
+            </div>
+            <div class="Card_counterCard__1P3_7" style="grid-area: weight / weight / weight / weight">
+              <div class="Card_cardHeader__A_QnC">
+                <div>
+                  <div class="Card_cardTitle__3o33r">
+                    <label for="weight">distance</label>
+                  </div>
+                  <div class="Card_cardSubtitle__2lk9G">
+                    <span id="out_dist">0</span> <span class="Card_hintText__390yi" id="dist_unit">Km</span>
+                  </div>
+                </div>
+                <div>
+                  <img src="distance png.png" id="dtimg" alt="distance picture"
+                    style="min-width:100px; width:100px; display: flex; max-width: 100%;" align="right">
+                </div>
+              </div>
+              <input id="weight" type="range" min="0" max="150" step="1" value="-1" oninput="dist_disp(this.value)" />
+            </div>
+            <div><br></div>
+            <button class="Button_textButton__wPvLR"
+              style="grid-area: calculate / calculate / calculate / calculate;   " onclick="
+              if ((sessionStorage.getItem('car') !== null) && (sessionStorage.getItem('distance') !== '0')) {
+                carbon_calc()
+          disp_up_tran();
+            timeFunction();
+            var delayInMilliseconds = 800;
+            setTimeout(function() {
+              window.location.href='/log.html';
+            }, delayInMilliseconds);
+              }
+
+          " id="bottom" class="buttons">
+              Calculate carbon output
+            </button>
+            <div style="opacity: 1;
+        ">
+              <button class="Button_plainButton__2mj8K" onclick="unit()" id="unit_but" style="grid-column-start: 1; grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;">Change unit</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <script src="./script.js"></script>
+        </div>
+        <div class="ReactModalPortal"></div>
+      </main>
+    </div>
+</body>
+
+</html>

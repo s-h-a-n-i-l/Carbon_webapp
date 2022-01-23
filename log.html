@@ -1,0 +1,233 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="carbon_icon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height, scale=1.0" />
+    <meta name="theme-color" content="#00d99c" />
+    <meta name="description" content="BMI tracker with graphs" />
+    <link rel="manifest" href="https://obese-pwa.netlify.app/manifest.json" />
+    <link rel="apple-touch-icon" href="https://obese-pwa.netlify.app/public/images/icons/apple-touch-icon.png" />
+    <title>carbon</title>
+    <link href="./carbon_files/3.f270ca23.chunk.css" rel="stylesheet" />
+    <link href="./carbon_files/main.6b25f9d7.chunk.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mai.scss">
+    <script defer src="./dist/swup.min.js"></script>
+    <script defer src="swup_script.js"></script>
+    <link rel="stylesheet" href="./styletr.css">
+    <link rel="stylesheet" href="./style card.css">
+
+    <script>
+        function timeFunction() {
+            var x = document.getElementById("man").style.display = "none";
+        }
+    </script>
+    <style type="text/css">
+        .grid-container {
+            display: grid;
+            grid-gap: 2%;
+            grid-template-columns: repeat(auto-fit, minmax(100%, 2fr));
+            grid-auto-rows: auto;
+            grid-auto-flow: dense;
+            row-gap: 1%;
+            padding: 0%;
+            grid-template-rows: 100px;
+            margin:auto;
+            width: 98%;
+        }
+
+        .grid-item {
+            padding: 0px;
+            font-size: 30px;
+            text-align: center;
+            max-width: 100%;
+            height: 100px;
+
+
+        }
+    </style>
+    <style type="text/css">
+        .fc-ab-root {
+            display: none !important;
+        }
+
+        body>div.fc-ab-root {
+            display: none !important;
+        }
+
+        .fbs-auth__container.fbs-auth__adblock {
+            display: none !important;
+        }
+
+        .overlay-34_Kj {
+            display: none !important;
+        }
+
+        .wrapper-3AzfF {
+            display: none !important;
+        }
+
+        .fEy1Z2XT {
+            display: none !important;
+        }
+
+        .nytc---modal-window---windowContainer.nytc---modal-window---isShown.nytc---shared---blackBG {
+            display: none !important;
+        }
+
+        .tp-modal {
+            display: none !important;
+        }
+
+        .tp-backdrop.tp-active {
+            display: none !important;
+        }
+
+        .c-nudge__container.c-gate__container {
+            display: none !important;
+        }
+
+        .c-nudge__container.c-regGate__container {
+            display: none !important;
+        }
+
+        .css-n7r8pg {
+            display: none !important;
+        }
+
+        .css-1bd8bfl {
+            display: none !important;
+        }
+
+        .overlay__59af11e2 {
+            display: none !important;
+        }
+
+        .tp_modal {
+            display: none !important;
+        }
+
+        .tp-backdrop.tp-active {
+            display: none !important;
+        }
+
+        div[class^="sp_message_container"] {
+            display: none !important;
+        }
+
+        div[class^="sp_veil"] {
+            display: none !important;
+        }
+    </style>
+
+    <script type="text/JavaScript">
+    </script>
+</head>
+
+<body id="bod" onload="
+var logs = (localStorage.getItem('log')).split(',');
+                        var uptra = document.getElementById('uptran');
+                        uptra.style.display = 'none';
+                        var sidtra = document.getElementById('sidtran')
+                        sidtra.style.display = 'none';
+                        var tot_CO2 = parseFloat('0')
+                        for (let i = 0; i <(logs.length-1)/4; i++) {
+                            var emis_card=`<div class='grid-item'> <div class='card'> <table class='card_table'> <td rowspan='3'class='card_row'>`+(parseInt(logs[(4*i)+4])).toString()+` g of CO2</td> <td class='card_row'>`+logs[(4*i)+1]+`</td> <tr></tr> <td class='card_row'>`+logs[(4*i)+2]+' '+logs[(4*i)+3]+`</td> </table> </div> <div style='height:7%; max-height: 15px;'> </div> </div>`
+                            document.getElementById('hist_cards').insertAdjacentHTML('afterbegin', emis_card)
+                            tot_CO2 += (parseFloat(logs[(4*i)+4])/1000)
+                        }
+                        document.getElementById('total_CO2').innerHTML = 'TOTAL CO2 RELEASED:  '+parseInt(tot_CO2).toString()+' KG'
+
+
+
+    ">
+    <div class="container">
+        <div id='uptran'style="display:none;">
+            <div class="top-layer"></div>
+            <div class="top-layer top-layer--2"></div>
+            <div class="top-layer top-layer--3"></div>
+            <div class="top-layer top-layer--4"></div>
+            <div class="top-layer top-layer--5"></div>
+            <div class="bottom-layer"></div>
+            <div class="bottom-layer bottom-layer--2"></div>
+            <div class="bottom-layer bottom-layer--3"></div>
+        </div>
+
+        <div id='sidtran'style="display:none;">
+            <div class="left-layer"></div>
+            <div class="left-layer left-layer--2"></div>
+            <div class="left-layer left-layer--3"></div>
+            <div class="left-layer left-layer--4"></div>
+            <div class="right-layer"></div>
+            <div class="right-layer right-layer--2"></div>
+            <div class="right-layer right-layer--3"></div>
+            <div class="buttons">
+            </div>
+        </div>
+
+        <main id="man" class="transition-swipe">
+            <noscript>You need to enable JavaScript to run this app.</noscript>
+            <div id="root">
+                <div class="header-container">
+                    <div class="right-aligned">
+                        <button aria-label="history" class="Button_iconButton__3j4co false undefined" onclick="
+            disp_up_tran();
+            timeFunction();
+            var delayInMilliseconds = 800;
+            setTimeout(function() {
+              window.location.href='/carbon.html';
+            }, delayInMilliseconds);" id="bottom" class="buttons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="box-sizing: content-box">
+                                <line x1="8" y1="6" x2="21" y2="6"></line>
+                                <line x1="8" y1="12" x2="21" y2="12"></line>
+                                <line x1="8" y1="18" x2="21" y2="18"></line>
+                                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <script src="./script.js"></script>
+            </div>
+            <div class="ReactModalPortal"></div>
+        </main>
+</body>
+
+<div class="grid-container" id="co2_grid">
+    <div class='grid-item'>
+        <div class='card'>
+            <table class='card_table'>
+                <td class='card_row'><b id="total_CO2">TOTAL CO2 RELEASED:  ......... KG </b></td>
+            </table>
+        </div>
+        <div style='height:7%; max-height: 15px;'> </div>
+    </div>
+    
+
+    <div class='grid-item'>
+        <div class='card'>
+            <table class='card_table'>
+                <td rowspan='3'class='card_row'><b>CO2 released</b></td>
+                <td class='card_row'> <b>Vehicle</b> </td>
+                <tr></tr>
+                <td class='card_row'><b> Distance</b> </td>
+            </table>
+        </div>
+        <div style='height:7%; max-height: 15px;'> </div>
+    </div>
+
+
+    <div id="hist_cards">
+
+    </div>
+
+</div>
+
+</html>

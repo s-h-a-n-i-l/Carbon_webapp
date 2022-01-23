@@ -1,0 +1,28 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+.card{
+  border-radius: 25px;
+  background: linear-gradient(120deg,#009fd9,#00d99c);
+  height: 25%;
+  max-height: 2px;
+  width: 98%;
+  color: #ffffff;
+  min-height: 3em ;
+  margin:auto;
+  align-items: auto;
+
+}
+
+.card_table{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 70%;
+  padding: 2%;
+}
+.card_row{
+  width: 50%;
+  font-size: clamp( 20px, 3vmin, 100%);
+}
